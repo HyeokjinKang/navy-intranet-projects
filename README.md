@@ -1,3 +1,5 @@
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHyeokjinKang%2Fnavy-intranet-projects&label=Visitors&icon=people-fill&color=%23198754&message=&style=social&tz=Japan)
+
 ## 시작
 
 이것은, 수병(水兵)의 영혼이 깃든 해군 인트라넷에 얽힌 기묘하고도 웅장한 이야기이다.
