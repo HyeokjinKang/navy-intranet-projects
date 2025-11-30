@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+#header {
+  position: fixed;
+  top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+#dateSelector {
+  transition-duration: 0.3s;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#contentContainer {
+  box-sizing: border-box;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(20, 20, 20, 0.2);
+  width: 20em;
+  border-radius: 1em;
+}
+
+#nameContainer {
+  color: navy;
+  font-size: 1.2em;
+}
+
+#percentageContainer {
+  margin-top: 1em;
+  background-color: #e4eef2;
+  border-radius: 4px;
+  height: 8px;
+  width: 100%;
+}
+
+#percentage {
+  background-color: navy;
+  border-radius: 4px;
+  height: 100%;
+  width: 0;
+  max-width: 100%;
+  transition-duration: 0.5s;
+}
+
+#pastPercentage {
+  color: navy;
+}
+
+#remainPercentage {
+  color: #8999bb;
+}
+
+#percentageTextcontainer {
+  margin-bottom: 3em;
+}
+
+.flexRowBetween {
+  display: flex;
+  margin-bottom: 1em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.flexRowBetween:last-child {
+  margin-bottom: 0;
+}
+
+details {
+  width: 100%;
+}

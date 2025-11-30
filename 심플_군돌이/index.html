@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./resources/style.css">
+    <title>심플 군돌이</title>
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        이름
+        <input type="text" id="nameInput" value="이나비" oninput="updateSchedule()" />
+      </div>
+      <div>
+        입대일자
+        <input type="date" id="dateSelector" value="2025-06-30" oninput="updateSchedule()" onblur="validCheck()">
+      </div>
+    </div>
+    <div id="content">
+      <div id="contentContainer">
+        <span id="nameContainer"><span id="level"></span> <b id="name"></b></span>
+        <div id="percentageContainer">
+          <div id="percentage"></div>
+        </div>
+        <div class="flexRowBetween" id="percentageTextContainer">
+          <span id="pastPercentage">0%</span>
+          <span id="remainPercentage">100%</span>
+        </div>
+        <div class="flexRowBetween">
+          <b>전역일</b>
+          <span class="details"></span>
+        </div>
+        <div class="flexRowBetween">
+          <b>전역까지</b>
+          <span class="details"></span>
+        </div>
+        <div class="flexRowBetween">
+          <b>입대한지 벌써</b>
+          <span class="details"></span>
+        </div>
+        <div class="flexRowBetween">
+          <b class="texts">다음 진급일까지</b>
+          <span class="details"></span>
+        </div>
+        <div class="flexRowBetween">
+          <b class="texts">다음 호봉까지</b>
+          <span class="details"></span>
+        </div>
+        <div class="flexRowBetween">
+          <b>하루에 늘어나는 퍼센트</b>
+          <span class="details"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./resources/script.js"></script>
+  </body>
+</html>
