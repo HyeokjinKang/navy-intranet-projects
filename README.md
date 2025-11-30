@@ -1,1 +1,1 @@
-# navy-intranet-games
+# navy-intranet-projects
