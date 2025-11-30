@@ -1,3 +1,4 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/HyeokjinKang/navy-intranet-projects?label=last%20updated)
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHyeokjinKang%2Fnavy-intranet-projects&label=Visitors&icon=people-fill&color=%23198754&message=&style=social&tz=Japan)
 
 ## 시작
