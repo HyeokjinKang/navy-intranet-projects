@@ -1,0 +1,22 @@
+{
+  "name": "navy-intranet-projects",
+  "version": "1.0.0",
+  "description": "![GitHub last commit](https://img.shields.io/github/last-commit/HyeokjinKang/navy-intranet-projects?label=last%20updated) ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHyeokjinKang%2Fnavy-intranet-projects&label=Visitors&icon=people-fill&color=%23198754&message=&style=social&tz=Japan)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyeokjinKang/navy-intranet-games.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HyeokjinKang/navy-intranet-games/issues"
+  },
+  "homepage": "https://github.com/HyeokjinKang/navy-intranet-games#readme",
+  "dependencies": {
+    "prettier": "^3.7.3"
+  }
+}
