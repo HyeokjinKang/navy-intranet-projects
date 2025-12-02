@@ -13,6 +13,7 @@ const texts = document.getElementsByClassName("texts");
 let 입대일자 = new Date();
 let 전역일자 = new Date();
 let 계급 = ["민간인", "이병", "일병", "상병", "병장", "민간인"];
+let prevDate = new Date().getDate();
 let n = 0;
 
 const validCheck = () => {
@@ -40,20 +41,25 @@ const updateSchedule = (a, b) => {
   let 병장진급 = new Date(dateString);
   전역일자 = new Date(dateString);
 
+  입대일자.setHours(0);
   let month = 입대일자.getMonth();
   month += 3;
   일병진급.setMonth(month);
   일병진급.setDate(1);
+  일병진급.setHours(0);
   month += 6;
   상병진급.setMonth(month);
   상병진급.setDate(1);
+  상병진급.setHours(0);
   month += 6;
   병장진급.setMonth(month);
   병장진급.setDate(1);
+  병장진급.setHours(0);
   month += 5;
   let date = 입대일자.getDate() - 1;
   전역일자.setDate(date);
   전역일자.setMonth(month);
+  전역일자.setHours(0);
 
   호봉 = 0;
 
@@ -104,10 +110,14 @@ const updateSchedule = (a, b) => {
   details[3].innerText = `${Math.ceil((진급일자.getTime() - Date.now()) / DAY)}일`;
   texts[1].innerText = `${계급[n]}${호봉 + 1}호봉이 되기까지`;
   details[4].innerText = `${Math.ceil((호봉일자.getTime() - Date.now()) / DAY)}일`;
-  details[5].innerText = `${(100 / parseInt((전역일자.getTime() - 입대일자.getTime()) / DAY)).toFixed(4)}`;
+  details[5].innerText = `${(100 / parseInt((전역일자.getTime() - 입대일자.getTime()) / DAY)).toFixed(4)}%`;
 };
 
 const updateGraph = () => {
+  if (prevDate != new Date().getDate()) {
+    prevDate = new Date().getDate();
+    updateSchedule();
+  }
   const calc = (Date.now() - 입대일자.getTime()) / (전역일자.getTime() - 입대일자.getTime()) * 100;
   percentage.style.width = `${calc.toFixed(1)}%`;
   pastPercentage.innerText = `${calc.toFixed(7)}%`;
