@@ -1,0 +1,60 @@
+<!-- Made by. 해군 兵 715기 Coupy -->
+<!doctype html>
+<html>
+  <head>
+    <title>ㅌㅌㄹㅅ v1.0</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./resources/style.css" />
+  </head>
+  <body>
+    <div id="topbar">
+      <div class="divider"><b>ㅌㅌㄹㅅ</b> <sup>by. 게임제작작전부</sup></div>
+      <div class="divider">
+        <div id="scoreContainer">
+          <span id="score">0</span>
+          <span>SCORE</span>
+        </div>
+      </div>
+      <div class="divider"><img src="./resources/assets/rank.png" id="rank" onclick="toggleRank()" /></div>
+    </div>
+    <div id="canvasContainer">
+      <div class="infoContainer">
+        <span>Hold</span>
+        <canvas id="holdCanvas" class="info"></canvas>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div class="infoContainer">
+        <span>Next</span>
+        <canvas id="nextCanvas" class="info"></canvas>
+      </div>
+    </div>
+    <div id="buttonContainer">
+      <button onclick="newGame()" id="newGameButton">새 게임</button>
+    </div>
+    <p id="description">
+      창에서 벗어나면 자동으로 일시정지됩니다.
+      <br />
+      방향키 : 이동
+      <br />
+      스페이스 바 : 하드 드롭
+      <br />
+      Z, X : 회전
+      <br />
+      C : 홀드
+    </p>
+    <div id="rankBackground">
+      <div id="rankContainer">
+        <h2>R A N K I N G</h2>
+        <span id="rankExit">Esc를 눌러 창 닫기</span>
+        <div class="rankElement">
+          <b>#</b>
+          <span>이름</span>
+          <span>점수</span>
+        </div>
+        <div id="rankContents"></div>
+      </div>
+    </div>
+    <script src="./resources/script.js"></script>
+  </body>
+</html>

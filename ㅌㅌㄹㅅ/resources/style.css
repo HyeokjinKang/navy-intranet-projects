@@ -1,0 +1,154 @@
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+sup {
+  font-size: 0.6em;
+}
+
+#topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 1vh 5vw;
+  background-color: #444;
+  border-bottom: 1px solid #666;
+  color: wheat;
+}
+
+.divider {
+  width: 33%;
+}
+
+.divider:last-child {
+  text-align: right;
+}
+
+#scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+#score {
+  color: wheat;
+  font-size: 1.4em;
+}
+
+#rank {
+  width: 24px;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+
+#canvasContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1em;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+.infoContainer:first-child {
+  align-items: flex-end;
+}
+
+.info {
+  margin-top: 4px;
+}
+
+#canvas {
+  background-color: #000;
+  border-radius: 3px;
+}
+
+#description {
+  text-align: center;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+#rankBackground {
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition-duration: 0.3s;
+}
+
+#rankContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  color: #eee;
+  width: 30em;
+  height: 30em;
+  border-radius: 1em;
+  box-sizing: border-box;
+  padding: 2em 4em;
+}
+
+#rankContainer > h2 {
+  color: wheat;
+  margin: 0;
+}
+
+#rankContents {
+  width: 100%
+}
+
+.rankElement {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rankElement > b {
+  margin-bottom: 8px;
+  width: 10%;
+}
+
+.rankElement > span {
+  width: 60%;
+}
+
+.rankElement > span:last-child {
+  width: 30%;
+  text-align: right;
+}
+
+#rankExit {
+  color: #a29376;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
